@@ -264,6 +264,7 @@ aside {
   width: 260px;
   padding: 8px 0;
   border: none;
+  border-radius: 2px;
   background-color: #898989;
   color: white;
 }
@@ -304,12 +305,12 @@ aside {
   /* border: 1px solid black; */
 }
 
-.news--container .items img {
+.items img {
   width: 100px;
   height: 100px;
 }
 
-.news--container figure {
+.news--container .items {
   padding: 15px;
 }
 
@@ -325,4 +326,11 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.img {
+  padding: 0;
+}
+
+.img img {
+  width: 100%;
 }
