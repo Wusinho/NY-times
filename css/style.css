@@ -46,12 +46,26 @@ nav {
 }
 
 main {
-  width: 1200px;
+  width: 1020px;
   margin: 0 auto;
   text-align: center;
 }
 
+.section1 {
+  margin-top: 60px;
+}
+
+.section1 h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 40px;
+  text-align: left;
+  width: 600px;
+  margin: 0 auto;
+  font-style: italic;
+}
+
 .section1 figure {
+  margin-top: 30px;
   width: 100%;
   text-align: center;
   overflow: hidden;
@@ -59,14 +73,20 @@ main {
 
 .section1 p {
   padding-top: 5px;
-
+  padding-right: 250px;
   width: 1020px;
   margin: 0 auto;
   text-align: justify;
-  font-size: 18px;
+  font-size: 17px;
+  color: #666;
 }
 
 .section1 img {
   width: 1020px;
   height: 599px;
+}
+
+.section1 span {
+  color: #ababab;
+  font-size: 15px;
 }
