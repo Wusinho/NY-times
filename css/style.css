@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 nav {
   display: flex;
@@ -10,6 +11,10 @@ nav {
   align-items: center;
   padding: 5px 25px 10px 20px;
   border-bottom: 1px solid #ccc;
+  position: fixed;
+  top: 0;
+  background: white;
+  width:100%;
 }
 .nav-left,
 .nav-right {
@@ -56,8 +61,7 @@ main {
 }
 
 .section1 h2 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 34px;
+  font-size: 38px;
   text-align: left;
   width: 600px;
   margin: 0 auto;
@@ -72,21 +76,90 @@ main {
 }
 
 .section1 p {
-  padding-top: 5px;
-  padding-right: 250px;
-  width: 1020px;
-  margin: 0 auto;
-  text-align: justify;
-  font-size: 17px;
-  color: #666;
+    padding-top: 5px;
+    width: 75%;
+    text-align: start;
+    font-size: 17px;
+    color: #666;
 }
 
 .section1 img {
-  width: 1020px;
   height: 599px;
 }
 
 .section1 span {
   color: #ababab;
   font-size: 15px;
+}
+
+
+
+
+
+
+.section2 {
+    width:600px;
+    margin: 0 auto;
+    text-align:left;
+    position:relative;
+}
+.social{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin: 20px 0;
+}
+.social span {
+    font-size:14px;
+}
+.social-icons {
+    display:flex;
+    align-items:center;
+}
+.social-icons > i{
+    margin-left: 18px;
+}
+
+.special{
+    text-decoration:underline
+}
+.special:hover{
+    text-decoration:none;
+    cursor:pointer
+}
+.author{
+    font-size: 16px;
+    font-weight: 800;
+    color: #3e3e3e;
+    margin: 40px 0 0 0;
+}
+.section2 p {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.unlock div:first-child{
+    border-top: 1px solid #ccc;
+    margin: 0 260px;
+}
+.unlock div:last-child{
+    border-bottom: 1px solid #ccc;
+    margin: 0 260px;
+}
+.unlock p{
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    font-weight:800;
+    font-size:16px;
+    margin: 20px 0;
+}
+.unlock p span{
+    color:rgb(50, 104, 145);
+}
+aside{
+    /* position: absolute */
+}
+.pick{
+    display:flex;
 }
