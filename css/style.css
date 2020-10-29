@@ -167,27 +167,32 @@ aside {
 .news--container {
   display: grid;
   grid-template-columns: repeat(3, 265px) 340px;
-  grid-template-rows: 40px 280px 100px 40px 300px 300px 300px;
+  grid-template-rows: 40px 280px 50px 40px 260px 300px 40px 300px;
   grid-template-areas:
-    "header--left header--left header--left header--right"
+    "first first first header--right"
     "line1-A line1-B line1-C line1-D"
     "line2-A line2-A line2-A line1-D"
-    "mid--title mid--title mid--title line1-D"
+    "mid mid mid line1-D"
     "line3-A line3-B . line1-D"
     "line4-A line4-B line4-C line1-D"
+    "last last last line1-D"
     "line5-A line5-B line5-C line1-D";
   gap: 20px;
 }
 
-.header--left {
-  grid-area: header--left;
+.first {
+  grid-area: first;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid black;
 }
 
-.header--left p {
+.title {
+  border-top: 1px solid black;
+  align-items: center;
+  display: flex;
+}
+
+.first p {
   cursor: pointer;
   color: #ababab;
 }
@@ -278,8 +283,8 @@ aside {
 .line3-C {
   grid-area: line3-B;
 }
-.mid--title {
-  grid-area: mid--title;
+.mid {
+  grid-area: mid;
 }
 
 .line4-A {
@@ -333,4 +338,90 @@ aside {
 
 .img img {
   width: 100%;
+}
+
+.last {
+  grid-area: last;
+}
+
+.img p {
+  text-align: end;
+  color: #898989;
+  font-size: 10px;
+  margin: 5px 0;
+}
+
+.img h6 {
+  padding: 5px 0;
+  font-weight: 400;
+  color: #898989;
+}
+
+.footer--container {
+  border-top: 1px solid #e2e2e2;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 50px 150px 150px 50px;
+  gap: 5px;
+  margin: 0 auto;
+  grid-template-areas:
+    "A A A A A A"
+    "News Opinion Arts Living More Subscribe"
+    "News Opinion Arts Living More Others"
+    "Info Info Info Info Info Info";
+}
+
+.A {
+  grid-area: A;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.News {
+  grid-area: News;
+}
+.Opinion {
+  grid-area: Opinion;
+}
+.Arts {
+  grid-area: Arts;
+}
+.Living {
+  grid-area: Living;
+}
+.More {
+  grid-area: More;
+  border-right: 1px solid #e2e2e2;
+}
+.Subscribe {
+  grid-area: Subscribe;
+}
+.Others {
+  grid-area: Others;
+}
+.Info {
+  grid-area: Info;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 1px solid #898989;
+  padding: 0 25px;
+}
+
+.footer {
+  width: 1200px;
+  margin: 0 auto;
+  border-top: 2px solid #e2e2e2;
+  padding-top: 1px;
+}
+
+.footer--items p,
+.footer--items span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+}
+
+.Info span {
+  font-size: 10px;
 }
