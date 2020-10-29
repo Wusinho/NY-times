@@ -4,19 +4,24 @@
   box-sizing: border-box;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
 i,
 button {
   cursor: pointer;
 }
+
 img {
   width: 100%;
 }
+
 a {
   text-decoration: underline;
 }
+
 a:hover {
   text-decoration: none;
 }
+
 nav {
   display: flex;
   text-transform: uppercase;
@@ -30,24 +35,30 @@ nav {
   width: 100%;
   z-index: 999;
 }
+
 .nav-left,
 .nav-right {
   display: flex;
   align-items: center;
 }
+
 .nav-left h4 {
   font-size: 13px;
   font-weight: bolder;
 }
-.nav-left a i {
+
+.nav-left .icon {
   font-size: 12px;
 }
+
 .nav-left .left-mid {
   margin: 0 25px;
 }
+
 .nav-right > * {
   margin-left: 5px;
 }
+
 .nav-right > button {
   padding: 8px 12px;
   font-size: 10px;
@@ -58,6 +69,7 @@ nav {
   border-radius: 3px;
   text-transform: uppercase;
 }
+
 .nav-mid {
   display: flex;
   flex: 1;
@@ -113,35 +125,43 @@ main {
   text-align: left;
   position: relative;
 }
+
 .social {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 20px 0;
 }
+
 .social span {
   font-size: 14px;
 }
+
 .social-icons {
   display: flex;
   align-items: center;
 }
+
 .social-icons > i {
   margin-left: 18px;
 }
+
 .special {
   text-decoration: underline;
 }
+
 .special:hover {
   text-decoration: none;
   cursor: pointer;
 }
+
 .author {
   font-size: 16px;
   font-weight: 800;
   color: #3e3e3e;
   margin: 40px 0 0 0;
 }
+
 .section2 p,
 .section3 p {
   font-size: 22px;
@@ -152,10 +172,12 @@ main {
   border-top: 1px solid #ccc;
   margin: 0 260px;
 }
+
 .unlock div:last-child {
   border-bottom: 1px solid #ccc;
   margin: 0 260px;
 }
+
 .unlock p {
   display: flex;
   flex-direction: column;
@@ -164,6 +186,7 @@ main {
   font-size: 16px;
   margin: 20px 0;
 }
+
 .unlock p span {
   color: rgb(50, 104, 145);
   cursor: pointer;
@@ -180,127 +203,155 @@ aside {
   right: -8%;
   top: 65%;
 }
-aside > * {
-  cursor: pointer;
-}
-aside h4 {
-  text-align: left;
-  padding-bottom: 10px;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #ccc;
-  font-size: 14px;
-}
-.pick img {
-  width: 75px;
-  height: 100%;
-  margin-right: 10px;
-}
+
 .pick {
   display: flex;
   text-align: left;
   margin-bottom: 15px;
   align-items: flex-end;
+  cursor: pointer;
 }
-.pick p {
-  font-size: 15px;
-}
-.pick p:hover {
-  text-decoration: underline;
-}
-.inflation {
-  position: relative;
-  margin: 25px 50px;
-}
-.inflation .desc {
+
+.aside-title {
   text-align: left;
-  width: 90%;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  cursor: pointer;
 }
+
+.pick img {
+  width: 75px;
+  height: 100%;
+  margin-right: 10px;
+}
+
 .desc p {
   font-size: 15px;
   color: #66668c;
 }
+
+.pick .para {
+  font-size: 15px;
+}
+
+.pick .para:hover {
+  text-decoration: underline;
+}
+
+.inflation {
+  position: relative;
+  margin: 25px 50px;
+}
+
+.inflation .desc {
+  text-align: left;
+  width: 90%;
+}
+
 .inflation > .p {
   width: 218px;
   position: absolute;
 }
-.inflation > .p p {
+
+.inflation > .p .inflation-desc {
   text-align: left;
   font-size: 13px;
 }
-.inflation > .p p strong {
+
+.inflation > .p .inflaction-desc strong {
   font-size: 12px;
   font-weight: bolder;
 }
+
 .p1 {
   top: 30%;
   left: 0%;
 }
+
 .p2 {
   top: 30%;
   left: 27%;
 }
+
 .p3 {
   top: 30%;
   left: 51%;
 }
+
 .p4 {
   top: 30%;
   left: 77%;
 }
+
 .p5 {
   top: 73%;
   left: 0%;
 }
+
 .p6 {
   top: 73%;
   left: 27%;
 }
+
 .p7 {
   top: 73%;
   left: 51%;
 }
+
 .p8 {
   top: 73%;
   left: 77%;
 }
+
 .line {
   border-top: 1px solid black;
   margin-right: 95%;
 }
+
 .credit-img {
   text-align: left;
   font-size: 12px;
   padding-top: 20px;
 }
+
 .video-container {
   margin: 45px 0;
 }
+
 .video-container p {
   font-size: 15px;
   color: #6f6679;
   font-weight: 500;
 }
+
 .spaceship p {
   color: #828282;
   font-size: 15px;
 }
+
 .headline {
   font-size: 20px;
   margin: 10px 0 20px 0;
 }
+
 .version p {
   font-size: 13px;
   margin: 0;
   cursor: pointer;
 }
-.version p > a:first-child {
-  padding: 0 5px 0 0;
-}
+
 .version p a {
   border-right: 1px solid black;
   padding: 0 5px;
   margin: 5px 0;
 }
+
+.version p > a:first-child {
+  padding: 0 5px 0 0;
+}
+
 .social button {
   padding: 10px 40px;
   font-size: 14px;
@@ -310,10 +361,12 @@ aside h4 {
   border: 0;
   border-radius: 5px;
 }
+
 .news--details {
   width: 1200px;
   margin: 0 auto;
 }
+
 .news--container {
   display: grid;
   grid-template-columns: repeat(3, 265px) 340px;
@@ -342,6 +395,7 @@ aside h4 {
   display: flex;
   cursor: pointer;
 }
+
 .last:hover {
   text-decoration: underline;
 }
@@ -355,16 +409,17 @@ aside h4 {
   grid-area: header--right;
   display: flex;
   border-top: 1px solid black;
-
   align-items: center;
 }
 
 .line1-A {
   grid-area: line1-A;
 }
+
 .line1-B {
   grid-area: line1-B;
 }
+
 .line1-C {
   grid-area: line1-C;
 }
@@ -377,6 +432,12 @@ aside h4 {
   transition: 400ms;
 }
 
+.news__icons .fa-plus {
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 6px;
+}
+
 .line1-A:hover .fa-plus,
 .line1-B:hover .fa-plus,
 .line1-C:hover .fa-plus {
@@ -385,6 +446,7 @@ aside h4 {
   background-color: black;
   color: white;
 }
+
 .line1-A:hover,
 .line1-B:hover,
 .line1-C:hover {
@@ -395,10 +457,22 @@ aside h4 {
 .line1-D {
   grid-area: line1-D;
 }
+
 .line1-D p {
   padding: 20px 0;
   font-size: 19px;
   border-top: 1px solid #e2e2e2;
+}
+
+.img p {
+  text-align: end;
+  color: #898989;
+  font-size: 10px;
+  margin: 5px 0;
+}
+
+.subscribe-icons > p {
+  margin: 10px 0;
 }
 
 .line1-D p:hover {
@@ -412,6 +486,7 @@ aside h4 {
   justify-content: center;
   align-items: center;
 }
+
 .line2-A button {
   width: 260px;
   padding: 8px 0;
@@ -425,12 +500,15 @@ aside h4 {
 .line3-A {
   grid-area: line3-A;
 }
+
 .line3-B {
   grid-area: line3-B;
 }
+
 .line3-C {
   grid-area: line3-C;
 }
+
 .mid {
   grid-area: mid;
 }
@@ -469,6 +547,10 @@ aside h4 {
   height: 100px;
 }
 
+.items {
+  position: relative;
+}
+
 .news--container .items {
   padding: 15px;
 }
@@ -477,7 +559,6 @@ aside h4 {
   width: 230px;
   display: flex;
   justify-content: space-between;
-  /* position: relative; */
 }
 
 .news--container .img {
@@ -493,34 +574,16 @@ aside h4 {
   grid-area: last;
 }
 
-.news__icons .fa-plus {
-  border: 2px solid black;
-  border-radius: 50%;
-  padding: 6px;
-}
-
-.items {
-  position: relative;
-}
-
-.items a {
+.items .a {
   text-decoration: none;
   font-weight: bolder;
   color: #326891;
-
   position: absolute;
   bottom: 10px;
 }
 
-.items a:hover {
+.items .a:hover {
   text-decoration: underline;
-}
-
-.img p {
-  text-align: end;
-  color: #898989;
-  font-size: 10px;
-  margin: 5px 0;
 }
 
 .img h6 {
@@ -553,36 +616,41 @@ aside h4 {
 .News {
   grid-area: News;
 }
+
 .Opinion {
   grid-area: Opinion;
 }
+
 .Arts {
   grid-area: Arts;
 }
+
 .Living {
   grid-area: Living;
 }
+
 .More {
   grid-area: More;
 }
+
 .Subscribe {
   grid-area: Subscribe;
   border-left: 1px solid #e2e2e2;
   padding-left: 14px;
 }
-.subscribe-icons > p {
-  margin: 10px 0;
-}
+
 .Info {
   grid-area: Info;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
+
 .Ghome {
   font-size: 10px !important;
   color: #60839b;
 }
+
 .Info span:hover {
   text-decoration: underline;
   cursor: pointer;
@@ -595,9 +663,9 @@ aside h4 {
   padding-top: 1px;
 }
 
-.footer--items p,
-.footer--items span,
-.footer--items h3 {
+.footer--items .p,
+.footer--items .span,
+.footer--items .h3 {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -605,16 +673,18 @@ aside h4 {
   font-size: 14px;
   padding-bottom: 8px;
 }
-.footer--items p {
+
+.footer--items .p {
   font-size: 13px;
   padding: 3px 0;
 }
+
 .footer--items p:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-.Info span {
+.Info .span {
   font-size: 11px;
   color: #666;
 }
@@ -623,7 +693,7 @@ aside h4 {
   width: 13px;
 }
 
-.Subscribe__Top span {
+.Subscribe__Top .subs-span {
   font-weight: bold;
   font-size: 15px;
   padding-left: 3px;
@@ -634,7 +704,7 @@ aside h4 {
   cursor: pointer;
 }
 
-.Subscribe__Bot p {
+.Subscribe__Bot .subs-p {
   margin: 5px 0;
   font-size: 12px;
 }
@@ -659,10 +729,9 @@ aside h4 {
   background-color: #333;
   position: fixed;
   bottom: 0;
-  cursor: pointer;
 }
 
-.bottom--nav div {
+.bottom--nav .nav-div {
   height: 60px;
   color: white;
   display: flex;
@@ -675,7 +744,7 @@ aside h4 {
   text-align: center;
 }
 
-.bottom--nav p {
+.bottom--nav .nav-p {
   font-size: 13px;
 }
 
@@ -685,6 +754,6 @@ h4:hover {
 
 .article h5,
 .article h3,
-.article p {
-  font-family: "Open Sans", sans-serif !important ;
+.article .art-p {
+  font-family: "Open Sans", sans-serif !important;
 }
