@@ -392,14 +392,14 @@ aside {
   border-radius: 5px;
 }
 
-.feature { 
+.feature {
   display: flex;
   flex-direction: column;
   border-top: 1px solid #ccc;
 }
 
 .container-feature {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   margin: 20px 0;
 }
@@ -819,7 +819,7 @@ aside {
   width: 1020px;
 }
 
-.bottom--nav .bottom-nav-h{
+.bottom--nav .bottom-nav-h {
   text-align: center;
 }
 
