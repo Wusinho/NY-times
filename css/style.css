@@ -264,7 +264,6 @@ aside {
 
 .pick .para {
   font-size: 13px;
-  /*  font-family: nyt-franklin, helvetica, arial, sans-serif !important; */
 }
 
 .pick .para:hover {
@@ -285,10 +284,12 @@ aside {
   width: 218px;
   position: absolute;
 }
+
 .inflaction-desc {
   text-align: left;
   font-size: 13px;
 }
+
 .inflation > .p .inflaction-desc strong {
   font-size: 12px;
   font-weight: bolder;
@@ -391,50 +392,52 @@ aside {
   border-radius: 5px;
 }
 
-.feature{
-  display:flex;
+.feature { 
+  display: flex;
   flex-direction: column;
   border-top: 1px solid #ccc;
 }
 
-.container-feature{
+.container-feature {
   display:flex;
   justify-content: space-between;
   margin: 20px 0;
 }
 
-.container-desc-1{
+.container-desc-1 {
   text-align: left;
-    display: flex;
-    justify-items: center;
-    flex-direction: column;
-    margin: auto 0;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  margin: auto 0;
 }
 
-.container-desc-2{
+.container-desc-2 {
   text-align: left;
-    display: flex;
-    justify-items: center;
-    margin: auto 0;
-    align-items:center;
+  display: flex;
+  justify-items: center;
+  margin: auto 0;
+  align-items: center;
 }
 
-.desc-2-h{
-margin-right: 10px;
+.desc-2-h {
+  margin-right: 10px;
 }
 
-.container-desc-3{
+.container-desc-3 {
   text-align: left;
-    display: flex;
-    margin: auto 0;
-    position: relative;
+  display: flex;
+  margin: auto 0;
+  position: relative;
 }
-.desc-3-span{
+
+.desc-3-span {
   position: absolute;
   top: 63%;
   left: 25%;
 }
-.feat-img{
+
+.feat-img {
   width: 250px;
 }
 
@@ -816,7 +819,7 @@ margin-right: 10px;
   width: 1020px;
 }
 
-.bottom--nav h5 {
+.bottom--nav .bottom-nav-h{
   text-align: center;
 }
 
@@ -827,4 +830,3 @@ margin-right: 10px;
 h4:hover {
   opacity: 0.6;
 }
-
