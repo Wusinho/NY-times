@@ -277,8 +277,8 @@ aside {
 }
 
 .inflation .desc {
-  text-align: left;
   width: 90%;
+  text-align: left;
 }
 
 .inflation > .p {
@@ -286,6 +286,7 @@ aside {
   position: absolute;
 }
 .inflaction-desc {
+  text-align: left;
   font-size: 13px;
 }
 .inflation > .p .inflaction-desc strong {
@@ -388,6 +389,53 @@ aside {
   color: white;
   border: 0;
   border-radius: 5px;
+}
+
+.feature{
+  display:flex;
+  flex-direction: column;
+  border-top: 1px solid #ccc;
+}
+
+.container-feature{
+  display:flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.container-desc-1{
+  text-align: left;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    margin: auto 0;
+}
+
+.container-desc-2{
+  text-align: left;
+    display: flex;
+    justify-items: center;
+    margin: auto 0;
+    align-items:center;
+}
+
+.desc-2-h{
+margin-right: 10px;
+}
+
+.container-desc-3{
+  text-align: left;
+    display: flex;
+    margin: auto 0;
+    position: relative;
+}
+.desc-3-span{
+  position: absolute;
+  top: 63%;
+  left: 25%;
+}
+.feat-img{
+  width: 250px;
 }
 
 .news--details {
@@ -751,17 +799,17 @@ aside {
 }
 
 .bottom--nav {
-  height: 60px;
   width: 100%;
   cursor: pointer;
-  background-color: #333;
+  background-color: white;
   position: fixed;
   bottom: 0;
+  border-top: 1px solid black;
 }
 
 .bottom--nav .nav-div {
   height: 60px;
-  color: white;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -780,15 +828,3 @@ h4:hover {
   opacity: 0.6;
 }
 
-.feature {
-  display: flex;
-  flex-direction: column;
-}
-
-.feature .container-feature {
-  width: 250px;
-}
-
-.feature .container-feature img {
-  width: 100%;
-}
