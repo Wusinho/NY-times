@@ -361,13 +361,13 @@ aside {
   border-top: 1px solid #e2e2e2;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 50px 150px 150px 50px;
+  grid-template-rows: 50px 150px 240px 50px;
   gap: 5px;
   margin: 0 auto;
   grid-template-areas:
     "A A A A A A"
     "News Opinion Arts Living More Subscribe"
-    "News Opinion Arts Living More Others"
+    "News Opinion Arts Living More Subscribe"
     "Info Info Info Info Info Info";
 }
 
@@ -392,14 +392,13 @@ aside {
 }
 .More {
   grid-area: More;
-  border-right: 1px solid #e2e2e2;
 }
 .Subscribe {
   grid-area: Subscribe;
+  border-left: 1px solid #e2e2e2;
+  padding-left: 14px;
 }
-.Others {
-  grid-area: Others;
-}
+
 .Info {
   grid-area: Info;
   display: flex;
@@ -407,6 +406,11 @@ aside {
   justify-content: space-evenly;
   border-top: 1px solid #898989;
   padding: 0 25px;
+}
+
+.Info span:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .footer {
@@ -417,11 +421,80 @@ aside {
 }
 
 .footer--items p,
-.footer--items span {
+.footer--items span,
+.footer--items h3 {
   font-family: "Open Sans", sans-serif;
-  font-size: 10px;
+}
+
+.footer--items h3 {
+  font-size: 14px;
+  padding-bottom: 8px;
+}
+.footer--items p {
+  font-size: 13px;
+  padding: 3px 0;
+}
+.footer--items p:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .Info span {
-  font-size: 10px;
+  font-size: 11px;
+  color: #666;
+}
+
+.Subscribe__Top svg {
+  width: 13px;
+}
+
+.Subscribe__Top span {
+  font-weight: bold;
+  font-size: 15px;
+  padding-left: 3px;
+}
+
+.Subscribe__Top span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.Subscribe__Bot p {
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+.Subscribe__Bot p:nth-of-type(1) {
+  margin-top: 20px;
+}
+
+.Subscribe__Bot p:nth-of-type(3) {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.Subscribe__Bot p:nth-of-type(4) {
+  padding-top: 10px;
+}
+.bottom--nav {
+  height: 50px;
+  background-color: #333;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.bottom--nav h5 {
+  text-align: center;
+}
+
+.bottom--nav p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
 }
