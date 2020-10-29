@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
 }
 
 i,
@@ -34,6 +34,7 @@ nav {
   background: white;
   width: 100%;
   z-index: 999;
+  padding-top: 10px;
 }
 
 .nav-left,
@@ -42,9 +43,14 @@ nav {
   align-items: center;
 }
 
-.nav-left h4 {
+.nav-left h5 {
   font-size: 13px;
   font-weight: bolder;
+}
+
+.nav-left h5:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .nav-left .icon {
@@ -70,10 +76,10 @@ nav {
   text-transform: uppercase;
 }
 
-.nav-mid {
+.nav-mid .logo {
   display: flex;
-  flex: 1;
-  justify-content: center;
+  cursor: pointer;
+  width: 200px;
 }
 
 main {
@@ -138,12 +144,36 @@ main {
 }
 
 .social-icons {
+  position: relative;
   display: flex;
   align-items: center;
 }
 
 .social-icons > i {
   margin-left: 18px;
+}
+
+.social-icons .i:nth-child(-n + 4) {
+  border: 2px solid #eee;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #eee;
+}
+
+.social-icons .nlikes {
+  position: absolute;
+  top: 7px;
+  right: 6px;
+  font-size: 12px;
+}
+
+.social-icons .fa-bookmark:hover,
+.social-icons .fa-comment-alt:hover {
+  color: #898989;
+}
+
+.social-icons .i:hover {
+  background-color: white;
 }
 
 .special {
@@ -233,7 +263,8 @@ aside {
 }
 
 .pick .para {
-  font-size: 15px;
+  font-size: 13px;
+  /*  font-family: nyt-franklin, helvetica, arial, sans-serif !important; */
 }
 
 .pick .para:hover {
@@ -254,12 +285,9 @@ aside {
   width: 218px;
   position: absolute;
 }
-
-.inflation > .p .inflation-desc {
-  text-align: left;
+.inflaction-desc {
   font-size: 13px;
 }
-
 .inflation > .p .inflaction-desc strong {
   font-size: 12px;
   font-weight: bolder;
@@ -376,7 +404,7 @@ aside {
     "line1-A line1-B line1-C line1-D"
     "line2-A line2-A line2-A line1-D"
     "mid mid mid line1-D"
-    "line3-A line3-B line3-C line1-D"
+    "line3-A line3-B . line1-D"
     "line4-A line4-B line4-C line1-D"
     "last last last line1-D"
     "line5-A line5-B line5-C line1-D";
@@ -752,8 +780,15 @@ h4:hover {
   opacity: 0.6;
 }
 
-.article h5,
-.article h3,
-.article .art-p {
-  font-family: "Open Sans", sans-serif !important;
+.feature {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature .container-feature {
+  width: 250px;
+}
+
+.feature .container-feature img {
+  width: 100%;
 }
