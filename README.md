@@ -22,11 +22,11 @@ This assignment consists of making a clone of a New York Times article page
 
 [Live Demo Link](https://wusinho.github.io/NY-times/)
 
-👤 **Author1**
+😎 **Abdo Amin**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+- GitHub: [@Abdelrhman-Amin](https://github.com/AbdelrhmanAmin)
+- Twitter: [@Abdo-Amin](https://twitter.com/AbdoAmi60489112)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdo-amin-ab786a1b0/)
 
 👤 **Heber Lazo**
 
@@ -43,12 +43,6 @@ Feel free to check the [issues page](https://github.com/Wusinho/NY-times/issues/
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
