@@ -223,13 +223,6 @@ aside {
   transition: 400ms;
 }
 
-.fa-plus {
-  width: 40px;
-  height: 40px;
-  border: 2px solid black;
-  border-radius: 50%;
-}
-
 .line1-A:hover .fa-plus,
 .line1-B:hover .fa-plus,
 .line1-C:hover .fa-plus {
@@ -287,30 +280,36 @@ aside {
   grid-area: mid;
 }
 
+.mid:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .line4-A {
   grid-area: line4-A;
 }
+
 .line4-B {
   grid-area: line4-B;
 }
+
 .line4-C {
   grid-area: line4-C;
 }
+
 .line5-A {
   grid-area: line5-A;
 }
+
 .line5-B {
   grid-area: line5-B;
 }
+
 .line5-C {
   grid-area: line5-C;
 }
 
-.items {
-  /* border: 1px solid black; */
-}
-
-.items img {
+.news--container .items img {
   width: 100px;
   height: 100px;
 }
@@ -319,29 +318,47 @@ aside {
   padding: 15px;
 }
 
-.news__icons {
+.news--container .news__icons {
   width: 230px;
   display: flex;
   justify-content: space-between;
+  /* position: relative; */
 }
 
-.line1-A,
-.line1-B,
-.line1-C {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.img {
+.news--container .img {
   padding: 0;
+  cursor: pointer;
 }
 
-.img img {
+.news--container .img img {
   width: 100%;
 }
 
-.last {
+.news--container .last {
   grid-area: last;
+}
+
+.news__icons .fa-plus {
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 6px;
+}
+
+.items {
+  position: relative;
+}
+
+.items a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: #326891;
+
+  position: absolute;
+  bottom: 10px;
+}
+
+.items a:hover {
+  text-decoration: underline;
 }
 
 .img p {
@@ -405,7 +422,6 @@ aside {
   align-items: center;
   justify-content: space-evenly;
   border-top: 1px solid #898989;
-  padding: 0 25px;
 }
 
 .Info span:hover {
@@ -415,7 +431,7 @@ aside {
 
 .footer {
   width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 60px auto;
   border-top: 2px solid #e2e2e2;
   padding-top: 1px;
 }
@@ -476,18 +492,24 @@ aside {
 .Subscribe__Bot p:nth-of-type(4) {
   padding-top: 10px;
 }
+
 .bottom--nav {
-  height: 50px;
-  background-color: #333;
-  bottom: 0;
+  height: 60px;
   width: 100%;
+  cursor: pointer;
+  background-color: #333;
   position: fixed;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.bottom--nav div {
+  height: 60px;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
-  cursor: pointer;
+  width: 1020px;
 }
 
 .bottom--nav h5 {
@@ -495,6 +517,15 @@ aside {
 }
 
 .bottom--nav p {
-  font-family: "Open Sans", sans-serif;
   font-size: 13px;
+}
+
+h4:hover {
+  opacity: 0.6;
+}
+
+.article h5,
+.article h3,
+.article p {
+  font-family: "Open Sans", sans-serif !important ;
 }
