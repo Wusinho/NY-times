@@ -725,9 +725,15 @@ aside {
   justify-content: space-evenly;
 }
 
-.Ghome {
-  font-size: 10px !important;
+.A .Ghome {
+  font-size: 10px;
   color: #60839b;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+}
+
+.A .Ghome:hover {
+  text-decoration: underline;
 }
 
 .Info span:hover {
